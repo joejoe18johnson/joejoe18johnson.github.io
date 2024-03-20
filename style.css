@@ -1,0 +1,112 @@
+
+
+:root{
+  --dark:#101922;
+}
+*{
+  padding: 0; 
+ margin: 0 ;
+  box-sizing: border-box;
+}
+
+body{
+  /* background-color: #0c1016 ; */
+
+  font-family: "Outfit", sans-serif;
+}
+
+nav{
+  background-color: var(--dark);
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #05c560;
+
+}
+
+button{
+  border: none;
+  background-color:#05c560;
+  color: #05c560;
+  padding: 18px 59px;
+  border-radius: 12px;
+  margin: 1rem;
+  display: flex;
+  font-size: 1rem;
+}
+
+.ri-download-line{
+  margin-left: 12px;
+  font-size: 1.2rem;
+}
+
+.container{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+padding: 12px 5px;
+  margin-top: 3rem;
+  width: 400px;
+  border: 1px solid rgb(255, 255, 255);
+  height: 500px;
+  border-radius: 12px;
+  color: #101922;
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+header{
+  font-size: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ri-folder-image-line  {
+  font-size: 4rem;
+  margin: 0 auto;
+ /* border: 1px solid #05c560;
+ border-radius: 12px; */
+}
+
+
+
+.file-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.file-info p{
+
+  background-color: #05c55f2f;
+  padding: 5px;
+  border-bottom: 1px solid #05c560;
+}
+
+.ri-download-cloud-2-line
+{
+  font-weight: 100;
+  font-size: 6rem;
+ border: 1px solid #05c560;
+ border-radius: 12px;
+}
+
+p{
+  font-weight: 200;
+  margin: 1rem;
+}
+
+h1{
+  font-size: 1rem;
+  font-weight: 400;
+  justify-content: center;
+  margin: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
