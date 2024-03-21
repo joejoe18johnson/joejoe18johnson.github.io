@@ -44,6 +44,8 @@ button{
   font-size: 1.2rem;
 }
 
+
+
 .container{
   display: flex;
   margin: auto;
@@ -52,6 +54,7 @@ button{
   place-items: center;
 padding: 12px 5px;
   margin-top: 3rem;
+  width: 400px;
   max-width: 90%;
   border: 1px solid rgb(255, 255, 255);
   height: 500px;
@@ -62,13 +65,25 @@ padding: 12px 5px;
 }
 
 header{
- 
+ border: 1px solid rgb(236, 240, 244);
+ padding: 5px 8px;
+ border-radius: 1rem;
+ background-color: #f6fbff;
   font-size: .8rem;
-  margin-top: .7rem;
-  font-weight: 500;
+  margin-top: 2rem;
+  font-weight: 400;
   display: flex;
   justify-content: center;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  gap: 1rem;
 }
+
+.ri-github-fill{
+  margin-right: .5rem;
+}
+
 
 .ri-folder-image-line  {
   font-size: 4rem;
