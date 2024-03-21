@@ -44,7 +44,9 @@ button{
   font-size: 1.2rem;
 }
 
-
+strong{
+  font-weight: 400;
+}
 
 .container{
   display: flex;
