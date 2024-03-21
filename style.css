@@ -110,6 +110,7 @@ header{
 }
 
 .file-info p{
+  font-size: .9rem;
 margin-top: 12px;
   background-color: #05c55f0c;
   padding: 5px;
