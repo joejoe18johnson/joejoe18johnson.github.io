@@ -156,16 +156,23 @@ a{
 }
 
 h4{
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
   justify-content: center;
-  margin-top: 0.5rem;
- /* background-color: #05c560;
- padding: 12px 12px; */
- color: var(--dark);
+  /* margin-top: 0.5rem; */
+ background-color: #05c560;
+ padding: 12px 12px;
+ /* color: var(--dark); */
+ color: white;
+}
+
+.bottom{
+  display: flex;
+  gap: 1rem;
 }
 
 .download-issues a{
+  cursor: pointer;
   color: rgb(27, 61, 251);
   font-weight: 600;
   border-bottom: 1px solid rgb(27, 61, 251);
