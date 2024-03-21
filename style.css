@@ -52,12 +52,12 @@ button{
   flex-direction: column;
   justify-content: center;
   place-items: center;
-padding: 12px 5px;
+padding: 20px 5px;
   margin-top: 1.5rem;
   width: 400px;
   max-width: 90%;
   border: 1px solid rgb(255, 255, 255);
-  height: 500px;
+  height: 520px;
   border: 1px solid rgb(246, 248, 255);
   border-radius: 12px;
   color: #101922;
@@ -95,24 +95,38 @@ header{
 
 
 .file-info{
+  padding: 12px 0px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   justify-content: center;
+  border-radius: 12px;
+ 
 }
 
 .file-info p{
-
-  background-color: #05c55f2f;
+margin-top: 12px;
+  background-color: #05c55f0c;
   padding: 5px;
   border-bottom: 1px solid #05c560;
 }
 
-.ri-download-cloud-2-line
+
+.ri-lock-line
 {
-  font-weight: 100;
-  font-size: 6rem;
- border: 1px solid #05c560;
- border-radius: 12px;
+ display: inline-flex;
+font-size: 1rem;
+background-color: rgba(250, 7, 7, 0.561);
+height: 40px;
+width: 40px;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+margin: auto;
+transform: scale(1);
+	animation: pulse 2s infinite;
+  color: #f6fbff;
+
 }
 
 p{
@@ -149,4 +163,22 @@ h4{
   color: rgb(27, 61, 251);
   font-weight: 600;
   border-bottom: 1px solid rgb(27, 61, 251);
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(226, 10, 10, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(234, 22, 22, 0);
+	}
 }
