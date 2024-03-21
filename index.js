@@ -1,26 +1,19 @@
-const x = document.getElementById("demo");
+const express = require('express');
+const path = require('path')
+const app = express();
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+// app.get('/', (req, res) => {
+// res.send(`<h1> Express Server </h1>`)
+// res.sendFile(path.join(__dirname, 'public', 'index.html'));
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// })
 
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
+//Set Static Folder
 
-  localStorage.setItem('myList', JSON.stringify(x.innerHTML))
-}
+app.use(express.static(path.join(__dirname, 'public')));
 
+const PORT = process.env.PORT || 5000;
 
-function myMap() {
-  var mapProp = {
-    center: new google.maps.LatLng(51.508742, -0.120850),
-    zoom: 5,
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
-
+app.listen(PORT, () => {
+  console.log(`Server Started on port ${PORT}`)
+})
