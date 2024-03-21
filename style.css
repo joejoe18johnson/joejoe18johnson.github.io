@@ -30,16 +30,6 @@ border-radius: 12px;
   /* max-height: 100px; */
 }
 
-nav{
-  background-color: var(--dark);
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: 100vw;
-
-}
 
 button{
   border: none;
@@ -68,7 +58,7 @@ strong{
   justify-content: center;
   place-items: center;
 padding: 20px 5px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   width: 400px;
   max-width: 90%;
   border: 1px solid rgb(255, 255, 255);
@@ -165,13 +155,13 @@ a{
 }
 
 h4{
-  font-size: .8rem;
-  font-weight: 400;
+  font-size: 1.25rem;
+  font-weight: 600;
   justify-content: center;
-  margin-top: 0rem;
- background-color: #05c560;
- padding: 12px 12px;
- color: white;
+  margin-top: 0.5rem;
+ /* background-color: #05c560;
+ padding: 12px 12px; */
+ color: var(--dark);
 }
 
 .download-issues a{
