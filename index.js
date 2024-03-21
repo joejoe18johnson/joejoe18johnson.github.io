@@ -1,19 +1,17 @@
 const express = require('express');
-const path = require('path')
+const path = require('path');
+// const exphbs = require('express-handlebars');
+
+
 const app = express();
 
-// app.get('/', (req, res) => {
-// res.send(`<h1> Express Server </h1>`)
-// res.sendFile(path.join(__dirname, 'public', 'index.html'));
-//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
-// })
 
-//Set Static Folder
-
+// Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Members API Routes
+// app.use('/api/members', require('./routes/api/members'));
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Server Started on port ${PORT}`)
-})
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
