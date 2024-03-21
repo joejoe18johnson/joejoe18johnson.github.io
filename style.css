@@ -71,7 +71,7 @@ padding: 20px 5px;
   width: 400px;
   max-width: 90%;
   border: 1px solid rgb(255, 255, 255);
-  height: 520px;
+  height: 500px;
   border: 1px solid rgb(246, 248, 255);
   border-radius: 12px;
   color: #101922;
@@ -84,7 +84,7 @@ header{
  border-radius: 1rem;
  background-color: #f6fbff;
   font-size: .8rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-weight: 400;
   display: flex;
   justify-content: center;
