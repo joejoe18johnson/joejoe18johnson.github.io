@@ -32,12 +32,12 @@ const notesSchema =
 
 const Note = mongoose.model("Location Data", notesSchema)
 
-app.get("/", function (req, res) {
+app.post("/", function (req, res) {
   res.send("Express is Working")
 })
 
 // posting to DB
-app.put("/", (req, res) => {
+app.post("/", (req, res) => {
   let newNote = new Note({
     title: req.body.title,
     // content: req.body.content
