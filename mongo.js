@@ -43,7 +43,7 @@ app.post('/', (req, res) => {
     content: req.body.content
   })
   newNote.save()
-  res.redirect('/')
+  // res.redirect('/')
 })
 
 app.listen(3000, () => {
