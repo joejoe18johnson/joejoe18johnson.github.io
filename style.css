@@ -207,7 +207,43 @@ h4{
 
 }
 
+footer{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  background-color: #05c560;
+  color: white;
+  width: 300px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
 
+ 
+}
+
+.icons i{
+  display: inline-flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 50%;
+  gap: 20px;
+  padding: 10px;
+  margin: 0 12px;
+  opacity: .4;
+}
+
+.icons i:first-child{
+  display: inline-flex;
+  justify-content: space-between;
+ background-color: #05c560;
+  border-radius: 50%;
+  gap: 20px;
+  padding: 10px;
+  margin: 0 12px;
+  opacity: 1;
+}
 
 
 @keyframes pulse {
