@@ -22,7 +22,7 @@
     <header><i class="ri-github-fill"></i>Github Certified Project</header>
 
     <h1>Private Document Viewer</h1>
-    <img class="main-img" src="./images/Social-Front-copy.jpg" alt="" height="200px">
+    <img id="main-img" src="./images/Social-Front-copy.jpg" alt="" height="200px">
     <div class="message-info">
       <p><strong>Send Passcode and Passphrase.</strong></p>
 
@@ -58,7 +58,19 @@
   <div class="ad">
     <img src="/images/QB-Ad.jpg" alt="">
   </div>
-  <script src="/app.js"></script>
+
+  <script>
+    (function () {
+      setTimeout(function () {
+        document.getElementById("main-img").style.display = "none";
+      }, 4000);
+
+    })();
+  </script>
+
+
+
+  <script src="/animations.js"></script>
 
 </body>
 
