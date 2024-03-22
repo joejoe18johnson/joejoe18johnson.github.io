@@ -37,13 +37,13 @@ app.get("/", function (req, res) {
 })
 
 // posting to DB
-app.post('/', (req, res) => {
+app.post("/", (req, res) => {
   let newNote = new Note({
     title: req.body.title,
     content: req.body.content
   })
   newNote.save()
-  res.redirect('/')
+  res.redirect("#")
 })
 
 app.listen(3000, () => {
