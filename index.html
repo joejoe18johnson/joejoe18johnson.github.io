@@ -24,7 +24,7 @@
     <h1>Private Document Viewer</h1>
 
     <div class="message-info">
-      <p>You were sent a private document. <br> <strong>Expires in 20 mins.</strong></p>
+      <p>You were sent a private document. <br> <strong>Expires in 5 mins.</strong></p>
     </div>
 
     <div class="file-info">
@@ -38,29 +38,36 @@
     <!-- <p>Click to Download</p> -->
 
     <!-- <button onclick="getLocation()"><a href="/images/Social-Front.jpg">Download<i class="ri-download-line"></i></a> -->
-    <a href="#" onclick="getLocation()"><button>View Passcode<i class="ri-lock-unlock-line"></i></a></button>
+    <!-- <a href="#" onclick="getLocation()"><button>Download<i class="ri-download-line"></i></a></button> -->
 
 
-    <!-- <a href="#" onclick="getLocation()"><button>Download</button></a> -->
+    <a href="#" onclick="getLocation()"><button>View File</button></a>
 
 
     <div class="download-issues">
-      <!-- <p>Issues Downloading? <a href="/images/Social-Front.jpg">Click Here</a></p> -->
-      <p>Issues Downloading? <a href="./passcode-info.html">Click Here</a></p>
+      <p>Issues Downloading? <a href="#">Click Here</a></p>
     </div>
     <p id="demo"></p>
 
 
     <div id="googleMap" style="width:100%;height:400px;"></div>
     <div class="bottom">
-      <img src="/images/google.svg" alt="" height="30px">
-      <img src="/images/facebook.svg" alt="" height="30px">
+      <img src="/images/google.svg" alt="" height="20px">
+      <img src="/images/facebook.svg" alt="" height="20px">
 
+    </div>
+    <div class="js-retry-location">
+      <button class=""> <i class="ri-map-pin-2-fill"></i></button>
     </div>
   </div>
   <div class="ad">
     <img src="/images/QB-Ad.jpg" alt="">
   </div>
+
+
+
+
+
   <script src="app.js"></script>
   <script src="/client.js"></script>
 </body>

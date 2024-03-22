@@ -15,5 +15,10 @@ function showPosition(position) {
 }
 
 
-
+const retryButton = document.querySelector('.js-retry-location');
+retryButton.addEventListener('click', event => {
+  navigator.geolocation.getCurrentPosition((coords) => {
+    console.log('coords');
+  });
+});
 
