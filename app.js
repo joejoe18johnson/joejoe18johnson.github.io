@@ -1,5 +1,3 @@
-
-
 const x = document.getElementById("demo");
 
 function getLocation() {
@@ -10,44 +8,11 @@ function getLocation() {
   }
 }
 
-// function showPosition(position) {
-//   x.innerHTML = "Passcode: " + position.coords.latitude +
-//     "<br>Passphrase: " + position.coords.longitude;
-//   localStorage.setItem('myList', JSON.stringify(x.innerHTML))
-// }
-
-
-const showPosition = (position) => {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
-  localStorage.setItem('myDataStorage', JSON.stringify(x.innerHTML))
-
+function showPosition(position) {
+  x.innerHTML = "PGP Key: " + position.coords.latitude +
+    "<br>SHA-256 Key: " + position.coords.longitude;
+  localStorage.setItem('myList', JSON.stringify(x.innerHTML))
 }
-
-const button = document.getElementById("btn")
-button.addEventListener("click", () => {
-  getLocation();
-
-})
-// const myValue = 
-
-var myData = localStorage.getItem('myDataStorage');
-const userInput = document.getElementById('input').value = myData;
-
-// const userInput = document.getElementById('input').value =
-
-
-
-
-const retryButton = document.querySelector('.js-retry-location');
-retryButton.addEventListener('click', event => {
-  navigator.geolocation.getCurrentPosition((coords) => {
-    console.log('coords');
-  });
-});
-
-
-
 
 
 

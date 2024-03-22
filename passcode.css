@@ -43,16 +43,6 @@ button{
   
 }
 
-#main-img{
-  margin-top: 12px;
-
-  width: 250px;
-  height: 200px;
-
-}
-
-
-
 #demo{
   background-color: #05c55f0e;
   padding: 22px 12px;
@@ -151,7 +141,6 @@ margin: auto;
 transform: scale(1);
 	animation: pulse 2s infinite;
   color: #f6fbff;
- 
 
 }
 
@@ -166,8 +155,7 @@ transform: scale(1);
    border-radius: 50%;
    margin: auto;
    transform: scale(1);
-     /* animation: bounce 2s infinite; */
-     animation: shake 0.1s linear 10;
+     animation: bounce 2s infinite;
      color: #f6fbff;
    
    }
@@ -252,24 +240,3 @@ h4{
 	
 	}
 }
-
-
-@keyframes shake{
-  0%{
-    transform: translateX(0px);
-  }
-  25%{
-    transform: translateX(-2px);
-  }
-  50%{
-    transform: translateX(0px);
-  }
-  75%{
-    transform: translateX(2px);
-  }
-  100%{
-    transform: translateX(0px);
-  }
-}
-
-
