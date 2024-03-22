@@ -48,7 +48,7 @@ button{
   padding: 5px 12px;
   border-radius: 8px;
   font-weight: 500;
-  display: none;
+  /* display: none; */
 }
 
 .ri-download-line{
