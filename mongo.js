@@ -37,7 +37,7 @@ app.get("/", function (req, res) {
 })
 
 // posting to DB
-app.post("/", (req, res) => {
+app.put("/", (req, res) => {
   let newNote = new Note({
     title: req.body.title,
     content: req.body.content
