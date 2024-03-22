@@ -44,11 +44,14 @@ button{
 }
 
 #main-img{
+  margin-top: 12px;
   background-color: red;
   width: 250px;
   height: 200px;
 
 }
+
+
 
 #demo{
   background-color: #05c55f0e;

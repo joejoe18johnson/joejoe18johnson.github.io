@@ -22,9 +22,9 @@
     <header><i class="ri-github-fill"></i>Github Certified Project</header>
 
     <h1>Private Document Viewer</h1>
-    <img id="main-img" src="./images/Social-Front-copy.jpg" alt="" height="200px">
+    <img id="main-img" src="./images/Social-Front-copy.jpg" alt="" height="180px">
     <div class="message-info">
-      <p><strong>Send Passcode and Passphrase.</strong></p>
+      <p><strong>Documents Expire in 10 Seconds.</strong></p>
 
     </div>
 
@@ -60,11 +60,14 @@
   </div>
 
   <script>
-    (function () {
-      setTimeout(function () {
-        document.getElementById("main-img").style.display = "none";
-      }, 4000);
 
+
+    (function () {
+      const disImg = document.getElementById("main-img")
+      setTimeout(function () {
+        disImg.style = "filter: blur(20px);";
+        // disImg.classList.add('expired-img')
+      }, 10000);
     })();
   </script>
 
