@@ -26,7 +26,19 @@ const myElement = document.getElementById("testBtn");
 myElement.innerHTML = "Clicked";
 
 
+document.getElementById("main-img").style.display = "none";
+alert("Hello Fam")
+
+  (function () {
+    setTimeout(function () {
+      document.getElementById("main-img").style.display = "none";
+    }, 4000);
+
+  })();
 
 
+alert("Hello")
+
+console.log("Is it Working?")
 
 

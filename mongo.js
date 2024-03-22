@@ -18,11 +18,11 @@ mongoose.connect('mongodb+srv://johannesjohnsonj:mwWmXZxUnWdDTlA1@usergeodataget
 
 app.get('/', (req, res) => {
   // res.send(`<h1> Express Server </h1>`)
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
+  // res.sendFile(path.join(__dirname, 'index.html'));
 })
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 const notesSchema =
 {
@@ -57,5 +57,7 @@ app.listen(3000, () => {
 
 // const collection = new mongoose.model('geoCodes', geoClickSchema)
 // collection.insertMany([data])
+
+
 
 
