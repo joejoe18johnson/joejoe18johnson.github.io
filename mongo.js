@@ -27,7 +27,7 @@ app.use(express.static(__dirname));
 const notesSchema =
 {
   title: String,
-  content: String,
+  // content: String,
 }
 
 const Note = mongoose.model("Location Data", notesSchema)
@@ -40,7 +40,7 @@ app.get("/", function (req, res) {
 app.put("/", (req, res) => {
   let newNote = new Note({
     title: req.body.title,
-    content: req.body.content
+    // content: req.body.content
   })
   newNote.save()
   res.redirect("/")
