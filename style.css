@@ -50,6 +50,12 @@ button{
   margin: 1rem;
   display: flex;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: .8;
+
 }
 
 .ri-download-line{
@@ -73,7 +79,7 @@ padding: 20px 5px;
   max-width: 90%;
   border: 1px solid rgb(255, 255, 255);
   /* height: 500px; */
-  max-height: 520px;
+  max-height: 550px;
  
   border: 1px solid rgb(246, 248, 255);
   border-radius: 12px;
@@ -208,6 +214,7 @@ h4{
 }
 
 footer{
+  position: fixed;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -219,8 +226,12 @@ footer{
   padding: 12px;
   margin-bottom: 12px;
   border-radius: 12px;
+bottom: 0;
+left:36%
+}
 
- 
+.icons{
+  background-color: none;
 }
 
 .icons i{
