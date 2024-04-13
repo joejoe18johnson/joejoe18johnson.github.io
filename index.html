@@ -4,80 +4,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>ePinkSlip | Certas Home and Auto Insurance Company </title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Outfit:wght@100..900&display=swap"
-    rel="stylesheet">
-  <title>Private Document Viewer</title>
 </head>
 
 <body>
 
-  <!-- <h4>Cut the Crap. Simple & Private.</h4> -->
-
   <div class="container">
-    <header><i class="ri-github-fill"></i>Github Certified Project</header>
 
-    <h1>Private Document Viewer</h1>
 
-    <div class="message-info">
-      <p>You were sent a private document. <br> <strong>Expires in 5 mins.</strong></p>
+    <div class="slip">
+      <div class="top">
+        <div class="logo"><img src="/images/epink_logo.png" alt="" height="30px">
+        </div>
+        <div class="info">
+          <h4>Expiry Date</h4>
+          <h1>JAN 18, 2023</h1>
+        </div>
+      </div>
+      <div class="company">
+        <h1>Certas Home and Auto Insurance</h1>
+        <h4>P.O. Box 7065, Miss. ON L5A 4K7</h4>
+        <h4>AGENT: <strong> VINCE IPPOLITO INS AND FIN SVC</strong></h4>
+
+
+      </div>
+      <div class="text holder">
+        <h4>INSURED / ASSURÉ(S):</h4>
+        <h1><strong>GLORIA OSEI ADUAKO</strong></h1>
+        <h1>607-85 ACORN PLACE</h1>
+        <h1>MISSISSAUGA, ONTARIO, L4Z 3N2</h1>
+      </div>
+      <div class="text">
+        <h4>POLICY NO./ POLICE N°:</h4>
+        <h1>JA21110551043PLA</h1>
+      </div>
+
+      <div class="text">
+        <h4>EFFECTIVE DATE/ ENTRÉE EN VIGUEU:</h4>
+        <h1>2023-02-03</h1>
+      </div>
+      <!--
+      <div class="text">
+        <h4>EXPIRY DATE/ EXPIRATION</h4>
+        <h1>2024-02-02</h1>
+      </div> -->
+
+      <!-- <div class="text">
+        <h4>VEHICLE(S)/ VEHICULE(S):</h4>
+        <h1>1</h1>
+      </div> -->
+
+      <div class="text">
+        <h4>YEAR/ ANNÉE:</h4>
+        <h1>2014</h1>
+      </div>
+
+      <div class="text">
+        <h4>MAKE/ MARQUE:</h4>
+        <h1>CHEVROLET</h1>
+      </div>
+
+      <div class="text">
+        <h4>MODEL/ MODÈLE:</h4>
+        <h1>CRUZE</h1>
+      </div>
+
+      <div class="text">
+        <h4>SERIAL NO./ N° DE SÉRIE:</h4>
+        <h1>1G1P15SH9D7260764</h1>
+      </div>
+
+
+      <div class="bottom">
+
+        <div class="qr-code">
+          <img src="/images/QR_code.png" alt="" height="120px">
+        </div>
+        <div class="insurance-info">
+          <p><i class="ri-information-line"></i>This digital insurance is valid proof insurance in your province. If you
+            are traveling outside of your
+            province, please use the paper version of your proof of insurance.</p>
+
+          <!-- <div class="bottom-cta">
+            <button>Download</button>
+            <i class="ri-information-line"></i>
+          </div> -->
+
+        </div>
+
+      </div>
+
+      <!-- 
+      <div class="more-info">
+        <i class="ri-information-line"></i>
+      </div> -->
+      <footer>
+        <p><strong>CANADA INTER PROVINCE </strong> MOTOR VEHICLE LIABILITY INSURANCE
+          CARD APPLICABLE WITHIN CANADA AND THE UNITED STATES OF AMERICA
+          CERTIFICAT 'ASSURANCE-AUTOMOBILE RESPONSABILITÉ EN VIGUEUR
+          AU CANADA ET AUX ETATS-UNIS D'AMERIQUE.</p>
+      </footer>
+
+      <div class=" button wallet">
+        <button> <i class="ri-add-line"></i>Add to Digital Wallet</button>
+      </div>
     </div>
 
-    <div class="file-info">
-      <!-- <i class="ri-folder-image-line"></i> -->
-      <i class="ri-lock-line"></i>
-
-      <!-- <img src="/images/document-lock-svgrepo-com.svg" alt="" height="80px"> -->
-      <p>Encrypted File</p>
-    </div>
-
-    <!-- <p>Click to Download</p> -->
-
-    <!-- <button onclick="getLocation()"><a href="/images/Social-Front.jpg">Download<i class="ri-download-line"></i></a> -->
-    <!-- <a href="#" onclick="getLocation()"><button>Download<i class="ri-download-line"></i></a></button> -->
-
-
-    <a href="#" onclick="getLocation()"><button>View Hash Key</button></a>
-
-
-    <div class="download-issues">
-      <p>Issues Downloading? <a href="#">Click Here</a></p>
-    </div>
-    <p id="demo"></p>
-
-
-    <div id="googleMap" style="width:100%;height:400px;"></div>
-    <div class="bottom">
-      <img src="/images/google.svg" alt="" height="20px">
-      <img src="/images/facebook.svg" alt="" height="20px">
-
-    </div>
-    <div class="js-retry-location">
-      <button class=""> <i class="ri-map-pin-2-fill"></i></button>
-    </div>
-  </div>
-  <div class="ad">
-    <img src="/images/QB-Ad.jpg" alt="">
-  </div>
-
-
-
-  <footer>
-
-    <div class="icons">
-      <i class="ri-home-fill"></i>
-      <i class="ri-settings-2-line"></i>
-      <i class="ri-user-line"></i>
-    </div>
-  </footer>
-
-
-  <script src="app.js"></script>
-  <script src="/client.js"></script>
 </body>
 
 </html>
