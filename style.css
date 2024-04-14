@@ -182,7 +182,7 @@ footer p{
 
 
 .popup-container{
-  position: absolute;
+  position: fixed;
   top: 2.5rem;
   left: 1.15rem;
   width: 90%;
@@ -262,11 +262,20 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
   margin-right: 12px;
 }
 
-.services button{
-    color: var(--black);
-    background-color: transparent;
-    border: 1px solid #101922;
+#close{
+    color: var(--light);
+    background-color: var(--green);
+    padding: 22px 0px;
+    border: none;
 }
+
+.popup button{
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid #101922;
+}
+
+
 
 .powered-by{
   opacity: .4;
