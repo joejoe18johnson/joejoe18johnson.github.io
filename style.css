@@ -2,6 +2,9 @@
   --pink:#f8afc3;
   --dark: #321316;
   --light:#ffffff;
+  /* --green: #05c560; */
+  --green: #00874e;
+  --black: #101922;
 }
 
 *{
@@ -10,11 +13,11 @@
 }
 
 body{
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 15px 0;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
  .container{
@@ -28,7 +31,7 @@ body{
 } 
 
 .slip{
-  margin: 10px 10px;
+  margin: 20px 20px;
   display: flex;
   flex-direction: column;
  /* place-items: center; */
@@ -115,9 +118,11 @@ font-weight: 600;
 
 
 .bottom{
+  text-align: center;
 margin: 12px 0;
 display: flex;
 gap: .5rem;
+justify-content: center;
 }
 
  button{
@@ -131,6 +136,7 @@ gap: .5rem;
   }
 
   .bottom p {
+    text-align: center;
     font-size: .9rem;
     text-transform: none !important;
     font-weight: 400;
@@ -154,6 +160,7 @@ color:var(--dark);
  }
 
 footer p{
+  font-size: .8rem;
   font-weight: 400;
   text-transform: none !important;
 
@@ -170,4 +177,109 @@ footer p{
 
 .wallet i{
   font-size: 1rem;
+}
+
+
+
+.popup-container{
+  position: absolute;
+  top: 2.5rem;
+  left: 1.15rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+background-color: var(--light);
+box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+}
+
+.popup{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 8px;
+  justify-content: center;
+  justify-items: center;
+  transition: all 3ms;
+  /* background-color: red; */
+
+}
+
+.popup-container button{
+  color: var(--light);
+ display: block;
+  background-color: var(--green);
+  width: 100%;
+}
+.popup-container h1{
+  color: var(--black);
+ font-size: 1.2rem; 
+}
+
+.popup-container h2{
+  color: var(--black);
+ font-size: .65rem; 
+ font-weight: 400;
+}
+
+.popup-container h6{
+  color: var(--black);
+ font-size: .65rem; 
+ font-weight: 100;
+}
+
+.popup-container p{
+  color: var(--black);
+ font-size: .80rem; 
+}
+
+.agent{
+  border-bottom: dashed 1px #101922;
+ padding-bottom: 12px;
+}
+
+.agent h2{
+  color: var(--black);
+  font-weight: 500;
+  font-size: .75rem; 
+}
+
+.services h1{
+  font-size: .90rem;
+  font-weight: 400;
+}
+
+
+.services{
+  border-top: dashed 1px #101922;
+  opacity: .4;
+  flex-direction: column;
+  display: inline-flex;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.services i {
+  margin-right: 12px;
+}
+
+.services button{
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid #101922;
+}
+
+.powered-by{
+  opacity: .4;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+#notification{
+  display: block;
+}
+
+#popup-notification{
+  display: block;
+  transition: opacity 10s;
 }
