@@ -210,7 +210,16 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
   background-color: var(--green);
   width: 100%;
 }
-.popup-container h1{
+
+
+.popup-container p{
+  text-align: center;
+  color: var(--black);
+ font-size: .9rem !important;
+ font-weight: 400;
+}
+
+.popup-container p{
   color: var(--black);
  font-size: 1.2rem; 
 }
@@ -235,6 +244,7 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 .agent{
   border-bottom: dashed 1px #101922;
  padding-bottom: 12px;
+ text-align: center;
 }
 
 .agent h2{
@@ -256,10 +266,21 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
   display: inline-flex;
   gap: 12px;
   padding-top: 12px;
+  
 }
 
 .services i {
   margin-right: 12px;
+}
+
+.services p {
+  margin-right: 12px;
+  text-align: left;
+}
+
+.services a {
+  text-align: center;
+  color: var(--green);
 }
 
 #close{
@@ -267,6 +288,7 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
     background-color: var(--green);
     padding: 22px 0px;
     border: none;
+    font-size: .9rem;
 }
 
 .popup button{
@@ -291,4 +313,11 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 #popup-notification{
   display: block;
   transition: opacity 10s;
+}
+
+
+.popup .header-logo{
+ display: inline-flex;
+ margin: 0 auto
+
 }
