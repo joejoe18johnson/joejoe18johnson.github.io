@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="popup-bg"></div>
   <div class="popup-container" id="popup-notification">
     <div class="popup">
       <img class="header-logo" src="/images/Desjardins_Group_logo.svg.png" alt="" width="150px">
@@ -21,15 +22,8 @@
       <p>This digital insurance is valid proof of insurance in your province. If you are traveling outside of your
         province, please use the paper version of your proof of insurance</p>
 
-      <div class="services">
-        <h1>Insurance Services</h1>
-        <p class="insurance-products"><i class="ri-arrow-right-circle-line"></i>Home Insurance</p>
-        <p class="insurance-products"><i class="ri-arrow-right-circle-line"></i>Auto Insurance</p>
-        <p class="insurance-products"><i class="ri-arrow-right-circle-line"></i>Recreational vehicle insurance</p>
-        <p class="insurance-products"><i class="ri-arrow-right-circle-line"></i>Pet insurance</p>
-        <a
-          href="https://www.desjardins.com/ca/about-us/desjardins/governance-democracy/structure/certas-direct/index.jsp">View
-          Our Insurance Services</a>
+      <div class="popup-image">
+        <img src="/images/digital-insurance.svg" alt="" width="300px">
       </div>
 
       <button id="close">Close to View Policy</button>
@@ -159,11 +153,11 @@
 
 
       closebtn.addEventListener("click", () => {
-        notification.style.display = "none";
+        notification.style.opacity = "0";
       });
 
-      if (notification.classList.contains == 'none') {
-        slipContainer.style.backgroundColor = 'white'
+      if (notification.style.opacity == '0') {
+        slipContainer.style.opacity = '1'
       } else {
 
       }

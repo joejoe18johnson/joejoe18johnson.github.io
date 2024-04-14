@@ -182,9 +182,11 @@ footer p{
 
 
 .popup-container{
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 1.5rem;
-  left: 1.15rem;
+  /* left: 1.15rem; */
   width: 90%;
   max-width: 400px;
   border-radius: 12px;
@@ -217,12 +219,10 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
   color: var(--black);
  font-size: .9rem !important;
  font-weight: 400;
-}
-
-.popup-container p{
-  color: var(--black);
  font-size: 1.2rem; 
 }
+
+
 
 .popup-container h2{
   color: var(--black);
@@ -312,7 +312,7 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 
 #popup-notification{
   display: block;
-  transition: opacity 10s;
+  transition: opacity 1s;
 }
 
 
@@ -320,4 +320,10 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
  display: inline-flex;
  margin: 0 auto
 
+}
+
+
+.popup-image{
+  display: flex;
+  justify-content: center;
 }
