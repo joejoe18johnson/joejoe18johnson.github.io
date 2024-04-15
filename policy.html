@@ -27,77 +27,81 @@
     </div>
   </div>
 
-  <div class="container" id="container">
-    <div class="slip">
-      <div class="top">
-        <div class="logo"><a href="https://epinkslip.com"><img src="/images/epink_logo.png" alt="" height="30px"></a>
+
+  <div id="content">
+    <div class="container" id="container">
+      <div class="slip">
+        <div class="top">
+          <div class="logo"><a href="https://epinkslip.com"><img src="/images/epink_logo.png" alt="" height="30px"></a>
+          </div>
+          <div class="info">
+            <h4>Expiry Date</h4>
+            <h1>JAN 18, 2023</h1>
+          </div>
         </div>
-        <div class="info">
-          <h4>Expiry Date</h4>
-          <h1>JAN 18, 2023</h1>
+        <div class="company">
+          <h1>Certas Home and Auto Insurance</h1>
+          <!-- <h4>P.O. Box 7065, Miss. ON L5A 4K7</h4> -->
+          <h4>AGENT: <strong> VINCE IPPOLITO INS AND FIN SVC</strong></h4>
+        </div>
+        <div class="text holder">
+          <h4>INSURED / ASSURÉ(S):</h4>
+          <h1><strong>MICHAEL BARTHEZ</strong></h1>
+          <h1>607-85 CEDAR GROVE PLACE</h1>
+          <h1>MISSISSAUGA, ONTARIO, L41 8V6</h1>
+        </div>
+        <div class="text">
+          <h4>POLICY NO./ POLICE N°:</h4>
+          <h1>JA21110551043PLA</h1>
+        </div>
+
+        <div class="text">
+          <h4>EFFECTIVE DATE/ ENTRÉE EN VIGUEU:</h4>
+          <h1>2023-02-03</h1>
+        </div>
+        <div class="text">
+          <h4>YEAR/ ANNÉE:</h4>
+          <h1>2014</h1>
+        </div>
+
+        <div class="text">
+          <h4>MAKE/ MARQUE:</h4>
+          <h1>CHEVROLET</h1>
+        </div>
+
+        <div class="text">
+          <h4>MODEL/ MODÈLE:</h4>
+          <h1>CRUZE</h1>
+        </div>
+
+        <div class="text">
+          <h4>SERIAL NO./ N° DE SÉRIE:</h4>
+          <h1>3G1P15SH9e97122038</h1>
+        </div>
+
+
+        <div class="bottom">
+          <div class="qr-code">
+            <img src="/images/QR_code.png" alt="" height="120px">
+          </div>
+        </div>
+
+
+        <footer>
+          <p>This policy is valid for all vehicles owned by or leased to the insured. This digital insurance is valid
+            proof of insurance in your province.</p>
+        </footer>
+
+        <div class=" button wallet">
+          <a href="/policy.html" download>
+            <button> <i class="ri-add-line"></i>Download/ Add to Digital Wallet</button>
+          </a>
         </div>
       </div>
-      <div class="company">
-        <h1>Certas Home and Auto Insurance</h1>
-        <!-- <h4>P.O. Box 7065, Miss. ON L5A 4K7</h4> -->
-        <h4>AGENT: <strong> VINCE IPPOLITO INS AND FIN SVC</strong></h4>
-      </div>
-      <div class="text holder">
-        <h4>INSURED / ASSURÉ(S):</h4>
-        <h1><strong>MICHAEL BARTHEZ</strong></h1>
-        <h1>607-85 CEDAR GROVE PLACE</h1>
-        <h1>MISSISSAUGA, ONTARIO, L41 8V6</h1>
-      </div>
-      <div class="text">
-        <h4>POLICY NO./ POLICE N°:</h4>
-        <h1>JA21110551043PLA</h1>
-      </div>
 
-      <div class="text">
-        <h4>EFFECTIVE DATE/ ENTRÉE EN VIGUEU:</h4>
-        <h1>2023-02-03</h1>
-      </div>
-      <div class="text">
-        <h4>YEAR/ ANNÉE:</h4>
-        <h1>2014</h1>
-      </div>
+      <!-- ******************************* -->
 
-      <div class="text">
-        <h4>MAKE/ MARQUE:</h4>
-        <h1>CHEVROLET</h1>
-      </div>
-
-      <div class="text">
-        <h4>MODEL/ MODÈLE:</h4>
-        <h1>CRUZE</h1>
-      </div>
-
-      <div class="text">
-        <h4>SERIAL NO./ N° DE SÉRIE:</h4>
-        <h1>3G1P15SH9e97122038</h1>
-      </div>
-
-
-      <div class="bottom">
-        <div class="qr-code">
-          <img src="/images/QR_code.png" alt="" height="120px">
-        </div>
-      </div>
-
-
-      <footer>
-        <p>This policy is valid for all vehicles owned by or leased to the insured. This digital insurance is valid
-          proof of insurance in your province.</p>
-      </footer>
-
-      <div class=" button wallet">
-        <a href="/policy.html" download>
-          <button> <i class="ri-add-line"></i>Download/ Add to Digital Wallet</button>
-        </a>
-      </div>
     </div>
-
-
     <script>
 
       const closebtn = document.getElementById('close');
@@ -108,6 +112,29 @@
       closebtn.addEventListener("click", () => {
         notification.style.opacity = "0";
       });
+
+
+      var doc = new jsPDF();
+      var specialElementHandlers = {
+        '#editor': function (element, renderer) {
+          return true;
+        }
+      };
+
+      $('#cmd').click(function () {
+        doc.fromHTML($('#content').html(), 15, 15, {
+          'width': 170,
+          'elementHandlers': specialElementHandlers
+        });
+        doc.save('sample-file.pdf');
+      });
+
+
+
+
+
+
+
 
 
     </script>

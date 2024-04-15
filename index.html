@@ -26,7 +26,7 @@
     href="https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@1.8/dist/add-to-homescreen.min.css">
   <script src="https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@1.8/dist/add-to-homescreen.min.js"></script>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -81,6 +81,10 @@
     </div>
   </div>
 
+  <!-- ********************************* -->
+
+
+  <!-- ********************************* -->
   <div class="container" id="container">
     <div class="slip">
       <div class="top">
@@ -146,10 +150,24 @@
           proof of insurance in your province.</p>
       </footer>
 
+
       <div class=" button wallet">
         <a href="/policy.html" download>
           <button> <i class="ri-add-line"></i>Download/ Add to Digital Wallet</button>
         </a>
+
+
+
+        <!-- ********************************* -->
+        <!-- <div id="content">
+          <h3>Hello, this is a H3 tag</h3>
+
+          <p>a pararaph Testing to See</p>
+        </div>
+        <div id="editor"></div>
+        <button id="cmd">Generate PDF</button> -->
+
+        <!-- ********************************* -->
       </div>
     </div>
 
@@ -182,10 +200,35 @@
 
       function myGreeting() {
         document.getElementById("myModal");
-        myModal.style.display = "none"
+        myModal.style.opacity = "0"
       }
 
+
+
+      var doc = new jsPDF();
+      var specialElementHandlers = {
+        '#editor': function (element, renderer) {
+          return true;
+        }
+      };
+
+      $('#cmd').click(function () {
+        doc.fromHTML($('#content').html(), 15, 15, {
+          'width': 170,
+          'elementHandlers': specialElementHandlers
+        });
+        doc.save('sample-file.pdf');
+      });
+
+
+
+
+
+
+
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </body>
 
 </html>
