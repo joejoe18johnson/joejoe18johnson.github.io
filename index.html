@@ -21,9 +21,35 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@1.8/dist/add-to-homescreen.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@1.8/dist/add-to-homescreen.min.js"></script>
+
+
+
 </head>
 
 <body>
+
+  <!-- ***************************************************************************** -->
+  <div class="install-modal" id="install-modal">
+    <div class="arrow">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+    <h4>Save/ Download Policy to Your Homescreen</h4>
+    <div class="item">
+      <p>1 - Tap </p><i class="ri-more-2-line"></i>
+    </div>
+    <div class="item">
+      <p>2 - Add to Homescreen </p><i class="ri-add-line"></i>
+    </div>
+    <div class="item">
+      <p>3 - Done! </p><i class="ri-check-line"></i>
+    </div>
+  </div>
+  <!-- ***************************************************************************** -->
+
   <div class="popup-container" id="popup-notification">
     <div class="close-button">
       <i class="ri-close-line" id="close-top"></i>
@@ -126,15 +152,7 @@
         </a>
       </div>
     </div>
-    <script>
-      function exportHTMLtoPDF() {
-        let htmlElement = document.getElementById('content');
 
-        html2pdf().from(htmlElement).save('exported_file.pdf');
-      }
-
-      document.getElementById('exportButton').addEventListener('click', exportHTMLtoPDF);
-    </script>
 
     <script>
 
@@ -153,6 +171,19 @@
       });
 
       // **********************************************************
+      // const modal = document.querySelector('install-modal');
+
+      // const myTimeout = setTimeout(myGreeting, 5000);
+
+
+      const myModal = document.getElementById("install-modal");
+
+      const myTimeout = setTimeout(myGreeting, 5000);
+
+      function myGreeting() {
+        document.getElementById("myModal");
+        myModal.style.display = "none"
+      }
 
     </script>
 </body>
