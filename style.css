@@ -21,6 +21,7 @@ body{
 }
 
  .container{
+
   /* display: flex; */
   width: 95%;
   max-width: 375px;
@@ -314,7 +315,7 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
 
 #popup-notification{
   display: block;
-  transition: opacity 1s;
+  transition: opacity 1.5s;
 }
 
 .popup .header-logo{
