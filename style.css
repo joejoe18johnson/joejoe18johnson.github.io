@@ -182,6 +182,7 @@ footer p{
 
 
 .popup-container{
+  background-color: red;
   top: 1.5rem;
   display: flex;
   justify-content: center;
@@ -420,6 +421,8 @@ box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
     opacity: 0;
   }
 }
+
+
   
 
 
