@@ -32,42 +32,38 @@
 
 <body>
 
-  <div class="popup-bg">
-    <div class="popup-container" id="popup-notification">
-      <div class="close-button">
-        <i class="ri-close-line" id="close-top"></i>
+
+  <div class="popup-container" id="popup-notification">
+    <div class="close-button">
+      <i class="ri-close-line" id="close-top"></i>
+    </div>
+    <div class="popup">
+      <img class="header-logo" src="/images/Desjardins_Group_logo.svg.png" alt="" width="130px">
+      <div class="agent">
+        <h1>Certas Direct Insurance&#8482;</h1>
+        <h2> AGENT: VINCE IPPOLITO INS AND FIN SVC</h2>
+        <p>P.O. Box 7065, Miss. ON L5A 4K7</p>
       </div>
-      <div class="popup">
-        <img class="header-logo" src="/images/Desjardins_Group_logo.svg.png" alt="" width="130px">
-        <div class="agent">
-          <h1>Certas Direct Insurance&#8482;</h1>
-          <h2> AGENT: VINCE IPPOLITO INS AND FIN SVC</h2>
-          <p>P.O. Box 7065, Miss. ON L5A 4K7</p>
-        </div>
-        <p>This digital insurance is valid proof of insurance in your province. If you are traveling outside of your
-          province, please use the paper version of your proof of insurance</p>
+      <p>This digital insurance is valid proof of insurance in your province. If you are traveling outside of your
+        province, please use the paper version of your proof of insurance</p>
 
-        <div class="popup-image">
-          <img src="/images/digital-insurance.svg" alt="" width="280px">
-        </div>
+      <div class="popup-image">
+        <img src="/images/digital-insurance.svg" alt="" width="280px">
+      </div>
 
-        <button id="close">View Policy</button>
+      <button id="close">View Policy</button>
 
-        <a href="/policy.html" download> <button>Download Policy</button></a>
-        <h6 class="copyright">© 1996-2024, Fédération des caisses Desjardins du Québec.
-          <br> All rights reserved.
-        </h6>
-        <div class="powered-by">
-          <p>Powered by:</p>
-          <a href="https://epinkslip.com"><img src="/images/epink_logo.png" alt="" width="80px"></a>
-        </div>
+      <a href="/policy.html" download> <button>Download Policy</button></a>
+      <h6 class="copyright">© 1996-2024, Fédération des caisses Desjardins du Québec.
+        <br> All rights reserved.
+      </h6>
+      <div class="powered-by">
+        <p>Powered by:</p>
+        <a href="https://epinkslip.com"><img src="/images/epink_logo.png" alt="" width="80px"></a>
       </div>
     </div>
   </div>
-  <!-- ********************************* -->
 
-
-  <!-- ********************************* -->
   <div class="container" id="container">
     <div class="slip">
       <div class="top">
@@ -82,7 +78,6 @@
         <h1>Certas Home and Auto Insurance</h1>
         <!-- <h4>P.O. Box 7065, Miss. ON L5A 4K7</h4> -->
         <h4>AGENT: <strong> VINCE IPPOLITO INS AND FIN SVC</strong></h4>
-
 
       </div>
       <div class="text holder">
@@ -161,12 +156,6 @@
         notification.style.opacity = "0";
       });
 
-      // **********************************************************
-      // const modal = document.querySelector('install-modal');
-
-      // const myTimeout = setTimeout(myGreeting, 5000);
-
-
       const myModal = document.getElementById("install-modal");
 
       const myTimeout = setTimeout(myGreeting, 5000);
@@ -175,28 +164,6 @@
         document.getElementById("myModal");
         myModal.style.opacity = "0"
       }
-
-
-
-      var doc = new jsPDF();
-      var specialElementHandlers = {
-        '#editor': function (element, renderer) {
-          return true;
-        }
-      };
-
-      $('#cmd').click(function () {
-        doc.fromHTML($('#content').html(), 15, 15, {
-          'width': 170,
-          'elementHandlers': specialElementHandlers
-        });
-        doc.save('sample-file.pdf');
-      });
-
-
-
-
-
 
 
     </script>
